@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>superheros</title>
+    <style>
+        .data {
+            height: 300px;
+            width: 230px;
+            background-color: cornflowerblue;
+            margin: 10px;
+            padding: 15px;
+            display: inline-block;
+            text-align: center;
+            border: 10px dotted black;
+            border-radius: 20px;
+        }
+
+        .image {
+            width: 100px;
+            height: 150px;
+            margin: 5px;
+            object-fit: cover;
+            display: inline-block;
+        }
+
+        .rdj {
+            background-image: url(./images/ironman.png);
+            background-color: burlywood;
+            background-repeat: repeat-x;
+            background-size: 50px 50px;
+            background-attachment: fixed;
+            background-position: 100% 20%;
+        }
+
+        .evans {
+            background: #8381fa url("./images/captain.jpg") no-repeat right top;
+            background-size: 50px 50px;
+            background-clip: border-box;
+            background-attachment: scroll;
+        }
+
+        .chris {
+            background: #8d8d95 url("./images/thor.jpg") no-repeat 50% 96%;
+            background-size: 65px 65px;
+            background-clip: content-box;
+        }
+
+        .jeremy {
+            background: #c732f4 url(./images/hawkeye.png) repeat-y 2% 100%;
+            background-size: 65px 65px;
+            background-clip: padding-box;
+            background-attachment: scroll;
+        }
+
+        .andrew {
+            background: #ef2b2b url(./images/spidy.jpg) repeat 100% 100%;
+            background-size: 65px 65px;
+        }
+
+        .color {
+            color: #104f11;
+            text-shadow: 2px 2px 2px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>background-repeat is repeat - x and attachment is fixed</h2>
+    <div class="data rdj">
+        <img class="image" src="./images/rdj.jpg">
+        <h3>Robert Downey Jr.</h3>
+        <h4>as Tony Star</h4>
+        <h5>aka Iron Man</h5>
+    </div>
+    <hr>
+    <h2>background clip is border box and no repeat</h2>
+    <div class="data evans">
+        <img class="image" src="./images/evans.jpg">
+        <h3>Chris Evans</h3>
+        <h4>as Steve Rogers</h4>
+        <h5>aka Captain America</h5>
+    </div>
+    <hr>
+    <h2>background position and background clip is content box</h2>
+    <div class="data chris">
+        <img class="image" src="./images/Hemsworth.jpg">
+        <h3>Chris Hemsworth</h3>
+        <h4>as Thor</h4>
+        <h5>.</h5>
+    </div>
+    <hr>
+    <h2>background repeat is Repeat y and background clip is padding box</h2>
+    <div class="data jeremy">
+        <img class="image" src="./images/jeremy.jpg">
+        <h3>Jeremy Renner</h3>
+        <h4>as Clint Barton</h4>
+        <h5>aka Hawkeye</h5>
+    </div>
+    <hr>
+    <h2> repeat</h2>
+    <div class="data andrew">
+        <img class="image" src="./images/andrewww.jpg">
+        <h3 class="color">Andrew Garfield</h3>
+        <h4 class="color">as Peter Parker</h4>
+        <h5 class="color">aka spider Man</h5>
+    </div>
+
+</body>
+
+</html>
